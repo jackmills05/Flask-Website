@@ -1,9 +1,8 @@
 * {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(192, 178, 178);
+    background-color: rgb(255, 255, 255);
 
   }
-
   li{ 
     font-style: italic, bold;
   }
@@ -16,20 +15,23 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-  
+  #clickable{
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(1, 238, 255);
+  }
   #header {
     min-height: 100px;
-    background: grey;
+    background: rgb(224, 221, 221);
     outline-style: auto;
     outline: 5px, black;
     box-shadow: 10px 10px 1pt black;
     outline-width: 1px;
+    border:none
   }
-
-
-
 #footer{
-  background-color: rgb(44, 39, 39);
+  background-color: rgb(219, 215, 215);
   min-height: 50px;
 }
   #footer #font{
@@ -49,8 +51,9 @@
     outline: black;
   display:block;
   background:none;
-
-    /* And if you want the div to be full-width: */
     left: 0;
     right: 100%;
+}
+code{
+  font-family: monospace;
 }
