@@ -1,13 +1,56 @@
 * {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(192, 178, 178);
+
   }
 
   li{ 
     font-style: italic, bold;
   }
-  #footer{
+  body{
+    margin:0px
+  }
+  #body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  #header {
+    min-height: 100px;
+    background: grey;
+    outline-style: auto;
+    outline: 5px, black;
+    box-shadow: 10px 10px 1pt black;
+    outline-width: 1px;
+  }
+
+
+
+#footer{
+  background-color: rgb(44, 39, 39);
+  min-height: 50px;
+}
+  #footer #font{
     color: grey;
     opacity: 40%;
-    
-  } 
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
+#github{
+  color: grey;
+  opacity: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 50%;
+    outline: black;
+  display:block;
+  background:none;
+
+    /* And if you want the div to be full-width: */
+    left: 0;
+    right: 100%;
+}
